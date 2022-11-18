@@ -1,0 +1,6 @@
+.todo-container {
+    background-color: lightblue;
+    display: grid;
+    margin:auto;
+    width: 50%;
+}
