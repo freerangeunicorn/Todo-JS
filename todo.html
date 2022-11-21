@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Todo Vanilla JS</title>
     <link href="todo.css" type="text/css" rel="stylesheet" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="todo-container" data-list-display-container>
-        <header>
-            <h1 class="list-title" data-list-title>This is a Todo list</h1>
-        </header>
-        <main class="todo-body">
-            <fieldset>
-            <legend class="list-title">Mai todos</legend>
-         <div class="todo-list" data-lists></div>
-                <input type="checkbox" id=""/>
-                <label>
-                    <span class="custom-checkbox"></span>
-                </label>
-                
-                 <!-- <li class="list-name active-list"></li> -->
-        
-            <form action="" data-new-list-form>
-              
-                <input type="text" class="new-list" data-new-list-input placeholder="enter new todo"
-                    aria-label="new-todo" />
-                   
-                <button class="btn-create" data-new-list-input aria-label="btn-create">+</button>
-                <button class="delete" data-delete-button>-</button>
-          
-            </form>
+      <header>
+        <h1 class="list-title" data-list-title>This is a Todo list</h1>
+      </header>
+      <main class="todo-body">
+        <fieldset>
+          <legend class="list-title">Mai todos</legend>
+          <ul class="todo-list" data-lists></ul>
+          <input type="checkbox" id="" />
+         
+
+          <!-- <li class="list-name active-list"></li> -->
+
+          <form action="" data-new-list-form>
+            <input
+              type="text"
+              class="new-list"
+              data-new-list-input
+              placeholder="enter new todo"
+              aria-label="new-todo"
+            />
+
+            <button
+              class="btn-create"
+              data-new-list-input
+              aria-label="btn-create"
+            >
+              +
+            </button>
+            <button class="delete" data-delete-button>-</button>
+          </form>
         </fieldset>
-        </main>
+      </main>
     </div>
     <script defer src="todo.js"></script>
-</body>
-
+  </body>
 </html>
