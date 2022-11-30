@@ -8,37 +8,35 @@
 
   <body>
     <div class="todo-container" data-list-display-container>
-      <header>
+  <!--     <header>
         <h1 class="list-title" data-list-title>This is a Todo list</h1>
-      </header>
+      </header> -->
       <main class="todo-body">
-        <fieldset>
-          <legend class="list-title">Mai todos</legend>
-          <ul class="todo-list" data-lists></ul>
-          <input type="checkbox" id="" />
-         
+          <h2 class="list-title" id="form-description"> List of todos</h2>
 
-          <!-- <li class="list-name active-list"></li> -->
-
-          <form action="" data-new-list-form>
+          <form action="" data-new-list-form aria-labelledby="form-description">
             <input
-              type="text"
-              class="new-list"
-              data-new-list-input
-              placeholder="enter new todo"
-              aria-label="new-todo"
+                id="name-input"
+                type="text"
+                class="new-list"
+                data-new-list-input
+                placeholder="Enter new todo here"
+                aria-label="New todo name"
+                
             />
 
             <button
               class="btn-create"
               data-new-list-input
-              aria-label="btn-create"
+              aria-label="Add todo"
             >
-              +
+              Add
             </button>
-            <button class="delete" data-delete-button>-</button>
+          <ul class="todo-list" data-lists></ul>
           </form>
-        </fieldset>
+          <button class="btn-delete"
+          aria-label="Delete a todo item" 
+          data-delete-button>Delete a todo</button>  <!-- move delete btn to make sense for list -->
       </main>
     </div>
     <script defer src="todo.js"></script>
