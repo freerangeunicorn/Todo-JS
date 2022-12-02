@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1" />
     <title>Todo Vanilla JS</title>
-    <link href="todo.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet"  href="todo.css" type="text/css" media="all"/>
+    <!-- Served to print media, like printers -->
+    <link rel="stylesheet" href="print.css" media="print" />
   </head>
 
   <body>
@@ -33,10 +35,11 @@
               Add
             </button>
           <ul class="todo-list" data-lists></ul>
+          <!-- <input type="checkbox" id="" /> -->
           </form>
           <button class="btn-delete"
           aria-label="Delete a todo item" 
-          data-delete-button>Delete a todo</button>  <!-- move delete btn to make sense for list -->
+          data-delete-button>Delete todo</button>  <!-- move delete btn to make sense for list -->
       </main>
     </div>
     <script defer src="todo.js"></script>
