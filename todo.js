@@ -7,19 +7,12 @@ const deleteButton = document.querySelector('[data-delete-button]');
 const LOCAL_STORAGE_LIST_KEY = 'task.lists';     //save to users browser so in eveytime user refreshes the page the todos are still there. localstorage is essentially key value pairs. namespace =task, to prevent from overriding info that's already in the localstorage or preventing other websites from overriding your key
 const LOCAL_STORAGE_SELECTED_TODO_ID_KEY = 'task.selectedTodoId';
 let lists = JSON.parse(localStorage.getItem(LOCAL_STORAGE_LIST_KEY)) || []; // get this info from localstorage and if it exists pare it into JSON Object of it doesn't exists return empty array
-/* let selectedTodoId = localStorage.getItem(LOCAL_STORAGE_SELECTED_TODO_ID_KEY)  */  //var for a selected todo item
+
 
 function selectedTodoId() {
 return localStorage.getItem(LOCAL_STORAGE_SELECTED_TODO_ID_KEY)
 }
 
-/* listsContainer.addEventListener('click', e => {
-    if (e.target.tagName.toLowerCase() === 'li') {
-        selectedTodoId = e.target.dataset.listId   //ID selected
-        console.log(selectedTodoId,'WTHHHHHH')
-        saveAndRender();
-    };  //element that has been clicked all elements(todos) are added into container hence eventlistener here           
-});  */
 
 
 deleteButton.addEventListener('click', e => {

@@ -1,4 +1,16 @@
+body {
+  background-image: linear-gradient(
+    95.2deg,
+    rgba(173, 252, 234, 1) 26.8%,
+    rgba(192, 229, 246, 1) 64%
+  );
+}
 .todo-container {
+  background-image: linear-gradient(
+    95.2deg,
+    rgba(173, 252, 234, 1) 26.8%,
+    rgba(192, 229, 246, 1) 64%
+  );
   background-color: white;
   display: flex;
   justify-content: center;
@@ -8,8 +20,9 @@
 }
 .todo-body {
   display: block;
-  background-color: whitesmoke;
+  background-color: white;
   padding: 20px;
+  border-radius: 5px;
 }
 .active-list {
   text-decoration: line-through;
@@ -37,6 +50,11 @@
 .btn-create {
   height: 37px;
   width: 50px;
+  background-color: rgb(0, 187, 255);
+  border-radius: 5%;
+  border: hidden;
+  color: white;
+  font-weight: bold;
 }
 
 .btn-delete {
@@ -47,33 +65,24 @@
   border: hidden;
 }
 
-@media only screen and (min-device-width: 360px) and  (max-device-width: 700px){
+@media only screen and (min-device-width: 280px) and (max-device-width: 768px) {
+  .todo-container {
+    width: auto;
+  }
 
-    .todo-container {
-        width: auto; 
-    }
-
-    .todo-body{
-        display: block;
-        background-color: whitesmoke;
-        padding: 20px;
-      padding-left: 40px;
-      padding-right: 40px;
-      margin-left: 20px;
-      margin-right: 20px;
-      max-width: 100%;
-
-    }
-    .btn-create {
-        height: 37px;
-        width: 100%;
-        margin-top: 10px;
-        background-color: rgb(0, 187, 255);
-        color: white;
-        border-radius: 3px;
-  border: hidden;
-  font-weight: bold;
-
-      }
-   
+  .todo-body {
+    display: block;
+    padding: 20px;
+    max-width: 100%;
+  }
+  .btn-create {
+    height: 37px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgb(0, 187, 255);
+    color: white;
+    border-radius: 3px;
+    border: hidden;
+    font-weight: bold;
+  }
 }
