@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <title>Todo Vanilla JS</title>
+    <link rel="stylesheet" href="todo.css" type="text/css" media="all" />
+    <!-- Served to print media, like printers -->
+    <link rel="stylesheet" href="todo.css" media="print" />
+  </head>
+
+  <body>
+    <div class="todo-container" data-list-display-container>
+      <main class="todo-body">
+        <h2 class="list-title" id="form-description">List of todos</h2>
+
+        <form action="" data-new-list-form aria-labelledby="form-description">
+          <input
+            id="name-input"
+            type="text"
+            autocomplete="todo-text"
+            class="new-list"
+            data-new-list-input
+            placeholder="Enter new todo here"
+            aria-label="New todo name"
+          />
+
+          <button class="btn-create" data-new-list-input aria-label="Add todo">
+            Add
+          </button>
+          <ul class="todo-list" data-lists></ul>
+          <!-- <input type="checkbox" id="" /> -->
+        </form>
+        <button
+          class="btn-delete"
+          aria-label="Delete a todo item"
+          data-delete-button
+        >
+          Delete todo
+        </button>
+      </main>
+    </div>
+    <script defer src="todo.js"></script>
+  </body>
+</html>
