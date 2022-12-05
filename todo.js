@@ -24,12 +24,11 @@ saveAndRender();
 // eventlistener to add a todo anytime a todo has been submitted
 newListForm.addEventListener('submit', e=> {
     e.preventDefault() // stop the page from refreshing the page when submitting 
-    const listName = newListInput.value  
-    console.log(listName, 'WTFFFFFF')   // get the name of the input value
+    const listName = newListInput.value   // get the name of the input value
     if (listName == null || listName === '') return       //make the user type in a name of todo
     const list = createList(listName);
     newListInput.value = null;     // clear the input in placeholder
-    lists.push(list); console.log(lists, 'HELLO')
+    lists.push(list); 
     saveAndRender()  
 });
 
@@ -62,7 +61,6 @@ function createCheckBox (checked = false) {
 
 function render() {
   clearTodo(listsContainer);
-  console.log('selectedTodoId',selectedTodoId())
   lists.forEach((list) => {
     const listElement = document.createElement('li');
     const checkbox = createCheckBox(list.id === selectedTodoId());
@@ -86,8 +84,5 @@ function clearTodo(element) {
         element.removeChild(element.firstChild)
     }
 }; // clear elements
-
-
-
 
 render ()// call the function

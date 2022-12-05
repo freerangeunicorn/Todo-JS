@@ -1,17 +1,12 @@
 body {
   background-image: linear-gradient(
     95.2deg,
-    rgba(173, 252, 234, 1) 26.8%,
+    rgb(25, 200, 244) 26.8%,
     rgba(192, 229, 246, 1) 64%
   );
 }
 .todo-container {
-  background-image: linear-gradient(
-    95.2deg,
-    rgba(173, 252, 234, 1) 26.8%,
-    rgba(192, 229, 246, 1) 64%
-  );
-  background-color: white;
+  background-color: linear-gradient( rgb(11, 89, 255));
   display: flex;
   justify-content: center;
   margin: auto;
@@ -50,7 +45,7 @@ body {
 .btn-create {
   height: 37px;
   width: 50px;
-  background-color: rgb(0, 187, 255);
+  background-color: rgb(11, 79, 174);
   border-radius: 5%;
   border: hidden;
   color: white;
